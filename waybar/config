@@ -71,6 +71,7 @@
 	"format-icons": [" ", " ", " ", " ", " "],
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
+	"interval": 30,
         "format-alt": "{time}"
     },
     "battery#bat2": {
