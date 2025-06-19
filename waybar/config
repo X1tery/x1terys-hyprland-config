@@ -4,9 +4,6 @@
     "modules-left": ["hyprland/workspaces", "custom/media"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["pulseaudio", "network","battery", "clock", "tray"],
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ ",
         "format-disconnected": "Disconnected ",
@@ -70,10 +67,11 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% ",
-        "format-charging": "{capacity}%",
-        "format-plugged": "{capacity}%",
-        "format-alt": "{time} "
+        "format": "{capacity}% {icon}",
+	"format-icons": [" ", " ", " ", " "],
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time}"
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -88,10 +86,10 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}%  {format_source}",
+        "format": "{volume}%            {format_source}",
         "format-bluetooth": "{volume}%  {format_source}",
         "format-bluetooth-muted": " {format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": "         {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "on-click": "pavucontrol"
