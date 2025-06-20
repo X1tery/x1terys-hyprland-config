@@ -49,7 +49,7 @@ window#waybar {
 #tray,
 #mode,
 #idle_inhibitor,
-#mpd {
+#custom-spotify {
   padding: 0 10px;
   margin: 6px 3px;
   color: #000000;
@@ -146,6 +146,10 @@ label:focus {
   min-width: 100px;
 }
 
+#custom-spotify {
+  background-color: #1db954;
+}
+
 #custom-media.custom-spotify {
   background-color: #66cc99;
 }
@@ -173,23 +177,6 @@ label:focus {
 #idle_inhibitor.activated {
   background-color: #ecf0f1;
   color: #2d3436;
-}
-
-#mpd {
-  background-color: #66cc99;
-  color: #2a5c45;
-}
-
-#mpd.disconnected {
-  background-color: #f53c3c;
-}
-
-#mpd.stopped {
-  background-color: #90b1b1;
-}
-
-#mpd.paused {
-  background-color: #51a37a;
 }
 
 #language {
